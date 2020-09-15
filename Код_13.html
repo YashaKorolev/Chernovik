@@ -10,8 +10,10 @@
 
 
 	let img = new Image;
+	img.crossOrigin = 'Photo';
+	img.src = 'https://im0-tub-ru.yandex.net/i?id=be88ba926dd6127170986cc6f1887d64&n=13';
 
-	img.src = 'https://bipbap.ru/wp-content/uploads/2017/05/VOLKI-krasivye-i-ochen-umnye-zhivotnye.jpg';
+
 	img.onload = function() {
 	
 	ctx.drawImage(img, 0, 0, img.width, img.height);
